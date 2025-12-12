@@ -5,7 +5,9 @@ function initZaloContactModal() {
   const modal = document.getElementById("zaloContactModal");
   if (!modal) return;
 
-  const openLinks = document.querySelectorAll("[data-open-zalo-modal], [data-action='open-zalo']");
+  const openLinks = document.querySelectorAll(
+    "[data-open-zalo-modal], [data-action='open-zalo']"
+  );
   const closeTriggers = modal.querySelectorAll("[data-modal-close]");
   const body = document.body;
   const descElement = modal.querySelector("[data-zalo-service-desc]");
@@ -86,11 +88,11 @@ function initZaloContactModal() {
     const href = linkElement
       ? linkElement.getAttribute("href") || linkElement.textContent.trim()
       : null;
-    
+
     // Also check current page URL for service context
     const currentUrl = window.location.pathname;
     let serviceKey = getServiceKey(href || currentUrl);
-    
+
     // If no service key found, try to detect from page context (for blog pages)
     if (!serviceKey && currentUrl.includes("khu-tham-moi")) {
       serviceKey = "lip-brightening";
@@ -1272,19 +1274,46 @@ function initNavigationLinks() {
       });
     });
 
-  // For navigation menu anchor links, prevent default scroll behavior
+  // For navigation menu anchor links, enable smooth scroll
   document
     .querySelectorAll(
       'header .nav a[href^="#"], header .nav-dropdown-menu a[href^="#"]'
     )
     .forEach((anchor) => {
       anchor.addEventListener("click", function (e) {
-        // Just prevent default scroll, don't scroll
-        e.preventDefault();
-        // Update URL hash without scrolling
         const href = this.getAttribute("href");
-        if (window.history && window.history.replaceState) {
-          window.history.replaceState(null, null, href);
+        const target = document.querySelector(href);
+
+        if (target) {
+          e.preventDefault();
+
+          // Close mobile menu if open
+          const nav = document.querySelector(".nav");
+          const mobileToggle = document.querySelector(".mobile-menu-toggle");
+          if (nav && nav.classList.contains("active")) {
+            nav.classList.remove("active");
+            if (mobileToggle) {
+              mobileToggle.classList.remove("active");
+            }
+          }
+
+          // Get header height for offset
+          const header = document.querySelector(".header");
+          const headerHeight = header ? header.offsetHeight : 80;
+
+          // Calculate target position with offset
+          const targetPosition = target.offsetTop - headerHeight;
+
+          // Smooth scroll to target
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          });
+
+          // Update URL hash without triggering scroll
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, null, href);
+          }
         }
       });
     });
