@@ -65,7 +65,7 @@ const blogTranslations = {
 
     blog_cta_title:
       "🌟 Muốn phun môi đẹp – an toàn – tự nhiên tại Lumi Beauty?",
-    blog_cta_text: "Đặt lịch ngay tại: lumibeauty.studio",
+    blog_cta_text: "Đặt lịch ngay tại: moinam.lumibeauty.studio",
     blog_cta_text2: "Hoặc inbox fanpage để được tư vấn miễn phí 1:1.",
 
     blog_message_title: "💖 LỜI NHẮN TỪ LUMI BEAUTY",
@@ -130,7 +130,7 @@ const blogTranslations = {
 
     blog_cta_title:
       "🌟 Want beautiful – safe – natural lip tattoo at Lumi Beauty?",
-    blog_cta_text: "Book now at: lumibeauty.studio",
+    blog_cta_text: "Book now at: moinam.lumibeauty.studio",
     blog_cta_text2: "Or message our fanpage for free 1:1 consultation.",
 
     blog_message_title: "💖 MESSAGE FROM LUMI BEAUTY",
@@ -196,7 +196,7 @@ const blogTranslations = {
 
     blog_cta_title:
       "🌟 루미 뷰티에서 예쁘고 안전하며 자연스러운 입술 타투를 받고 싶으신가요?",
-    blog_cta_text: "지금 예약하세요: lumibeauty.studio",
+    blog_cta_text: "지금 예약하세요: moinam.lumibeauty.studio",
     blog_cta_text2: "또는 팬페이지로 메시지를 보내 무료 1:1 상담을 받으세요.",
 
     blog_message_title: "💖 루미 뷰티의 메시지",

@@ -2,15 +2,15 @@
 
 ## 📊 Thông Tin Cấu Hình
 
-| Thông Tin              | Giá Trị                                 | Trạng Thái           |
-| ---------------------- | --------------------------------------- | -------------------- |
-| **Pixel ID**           | `1826377334661720`                      | ✅ Đã cấu hình       |
-| **Access Token**       | `EAAUpOyF...`                           | ✅ Đã cấu hình       |
-| **CAPI Endpoint**      | `https://lumibeauty.studio/api/capi`    | ⚠️ Cần deploy Worker |
-| **Dataset Endpoint**   | `https://lumibeauty.studio/api/dataset` | ⚠️ Cần deploy Worker |
-| **Config File**        | `fb-pixel-config.js`                    | ✅ Đã tạo            |
-| **Tracking Script**    | `js/facebook-pixel.js`                  | ✅ Đã tạo            |
-| **Header Integration** | `components/header-*.html`              | ✅ Đã thêm           |
+| Thông Tin              | Giá Trị                                        | Trạng Thái           |
+| ---------------------- | ---------------------------------------------- | -------------------- |
+| **Pixel ID**           | `1826377334661720`                             | ✅ Đã cấu hình       |
+| **Access Token**       | `EAAUpOyF...`                                  | ✅ Đã cấu hình       |
+| **CAPI Endpoint**      | `https://moinam.lumibeauty.studio/api/capi`    | ⚠️ Cần deploy Worker |
+| **Dataset Endpoint**   | `https://moinam.lumibeauty.studio/api/dataset` | ⚠️ Cần deploy Worker |
+| **Config File**        | `fb-pixel-config.js`                           | ✅ Đã tạo            |
+| **Tracking Script**    | `js/facebook-pixel.js`                         | ✅ Đã tạo            |
+| **Header Integration** | `components/header-*.html`                     | ✅ Đã thêm           |
 
 ## 📁 Files Đã Tạo/Cập Nhật
 
@@ -80,7 +80,7 @@
 - [ ] Set Environment Variables:
   - `FB_ACCESS_TOKEN`
   - `FB_PIXEL_ID`
-- [ ] Cấu hình route: `lumibeauty.studio/api/*`
+- [ ] Cấu hình route: `moinam.lumibeauty.studio/api/*`
 - [ ] Deploy
 
 ### 2. Test Events
