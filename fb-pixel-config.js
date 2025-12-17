@@ -9,7 +9,7 @@ window.FB_PIXEL_CONFIG = {
   pixelId: "1826377334661720",
 
   // Cloudflare Worker URL for Conversions API
-  capiEndpoint: "https://moinam.lumibeauty.studio/api/capi",
+  capiEndpoint: "https://lumi-capi.nvduc2910.workers.dev/api/capi",
 
   // testEventCode: Optional - chỉ thêm khi test trong Meta Events Manager
   // testEventCode: "TEST12345", // Uncomment và thêm code khi cần test
